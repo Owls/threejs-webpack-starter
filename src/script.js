@@ -36,11 +36,11 @@ scene.add(sphere)
 
 const sphere2 = new THREE.Mesh(geometry2, material)
 scene.add(sphere2)
-sphere2.position.set(1.25, 0.75, -0.75);
+sphere2.position.set(.65, 0.75, -0.75);
 
 // Lights
 
-const pointLight = new THREE.PointLight(0x4389A2, 0.1)
+const pointLight = new THREE.PointLight(0x8a46ff, 0.1)
 pointLight.position.set(-1.32, 1.52, -0.61)
 pointLight.intensity = 5.34
 scene.add(pointLight)
@@ -65,7 +65,7 @@ light.addColor(lightColor, 'color')
         pointLight.color.set(lightColor.color)
     })
 
-const pointLight2 = new THREE.PointLight(0x4776E6, 2)
+const pointLight2 = new THREE.PointLight(0x8a46ff, 2)
 pointLight2.position.set(-1.39, -1.6, 1.87)
 pointLight2.intensity = 7.88
 scene.add(pointLight2)
@@ -90,7 +90,7 @@ light2.addColor(light2Color, 'color')
         pointLight.color.set(light2Color.color)
     })
 
-const pointLight3 = new THREE.PointLight(0x5C258D, 2)
+const pointLight3 = new THREE.PointLight(0x8a46ff, 2)
 pointLight3.position.set(-0.48, -0.3, 0.35)
 pointLight3.intensity = 8.54
 scene.add(pointLight3)
@@ -225,7 +225,7 @@ const tick = () =>
     sphere.rotation.x += .05 * (targetY - sphere.rotation.x)
     sphere.position.z += -.05 * (targetY - sphere.rotation.x)
 
-    sphere2.rotation.x = .001 * elapsedTime
+    sphere2.rotation.y = .75 * elapsedTime
 
     sphere2.rotation.y += .5 * (targetX - sphere2.rotation.y)
     sphere2.rotation.x += .05 * (targetY - sphere2.rotation.x)
