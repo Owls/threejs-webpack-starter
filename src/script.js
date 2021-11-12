@@ -36,7 +36,7 @@ scene.add(sphere)
 
 const sphere2 = new THREE.Mesh(geometry2, material)
 scene.add(sphere2)
-sphere2.position.set(.65, 0.75, -0.75);
+sphere2.position.set(.45, 0.75, -0.75);
 
 // Lights
 
